@@ -12,6 +12,8 @@ BMI_Calc(feet, inches, weight_lbs)
   * Calculates BMI from parameters
   * Prints out the result to console
 
+[BMI_Calc Tests](https://github.com/ClaireG-J/TestingQAHW/wiki/BMI_Calc-Tests)
+
 Category_Calc(BMI)
   * Recieves a BMI value as a parameter
   * Evaluates the Category the BMI falls under
@@ -20,6 +22,8 @@ Category_Calc(BMI)
       * 25 <= x < 30 : Overweight
       * x >= 30 : Obese
   * Returns a string containing the category
+
+[Category_Calc Tests](https://github.com/ClaireG-J/TestingQAHW/wiki/Category_Calc-Tests)
 
 main()
   * Prints out welcome message to console
