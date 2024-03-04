@@ -10,7 +10,8 @@ Functions:
 BMI_Calc(feet, inches, weight_lbs)
   * Recieves input as parameters
   * Calculates BMI from parameters
-  * Prints out the result to console
+  * Prints out the result to console if successful
+  * Prints error if unsuccessful
 
 [BMI_Calc Tests](https://github.com/ClaireG-J/TestingQAHW/wiki/BMI_Calc-Tests)
 
@@ -26,10 +27,11 @@ Category_Calc(BMI)
 [Category_Calc Tests](https://github.com/ClaireG-J/TestingQAHW/wiki/Category_Calc-Tests)
 
 main()
-  * Prints out welcome message to console
   * Takes user input for feet
   * Takes user input for inches
   * Takes user input for weight (in lbs)
+  * Returns 0 if successful
+  * Prints error if unsuccessful
 
 [main Tests](https://github.com/ClaireG-J/TestingQAHW/wiki/main-Tests)
 
