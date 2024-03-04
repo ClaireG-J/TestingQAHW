@@ -29,7 +29,36 @@ def test_BMI_Calc(feet,inch,weight,out,capsys):
         captured_stdout, captured_stderr = capsys.readouterr()
         assert captured_stdout.strip() == out
 
+# tests for main
 
+def geninputs(f,i,w):
+        inputs = [f,i,w]
+        for item in inputs:
+                yield item
+
+in_vals1 = geninputs(5,3,125)
+in_vals2 = geninputs("wrongf",3,125)
+in_vals3 = geninputs(5,"wrongi",125)
+in_vals4 = geninputs(5,3,"wrongw")
+
+def test_input1(monkeypatch):
+        monkeypatch.setattr('builtins.input', lambda _: next(in_vals1))
+        assert main() == 0
+
+def test_input2(monkeypatch, capsys):
+    monkeypatch.setattr('builtins.input', lambda _: next(in_vals2))
+    captured_stdout, captured_stderr = capsys.readouterr()
+    assert captured_stdout.strip() == "Error, invalid input"
+
+def test_input3(monkeypatch, capsys):
+    monkeypatch.setattr('builtins.input', lambda _: next(in_vals3))
+    captured_stdout, captured_stderr = capsys.readouterr()
+    assert captured_stdout.strip() == "Error, invalid input"
+
+def test_input4(monkeypatch, capsys):
+    monkeypatch.setattr('builtins.input', lambda _: next(in_vals4))
+    captured_stdout, captured_stderr = capsys.readouterr()
+    assert captured_stdout.strip() == "Error, invalid input"
 
 
 
