@@ -30,3 +30,6 @@ main()
   * Takes user input for feet
   * Takes user input for inches
   * Takes user input for weight (in lbs)
+
+[main Tests](https://github.com/ClaireG-J/TestingQAHW/wiki/main-Tests)
+
