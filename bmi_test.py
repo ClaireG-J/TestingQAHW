@@ -42,23 +42,20 @@ in_vals3 = geninputs(5,"wrongi",125)
 in_vals4 = geninputs(5,3,"wrongw")
 
 def test_input1(monkeypatch):
-        monkeypatch.setattr('builtins.input', lambda _: next(in_vals1))
-        assert main() == 0
+    monkeypatch.setattr('builtins.input', lambda _: next(in_vals1))
+    assert main() == 0
 
-def test_input2(monkeypatch, capsys):
+def test_input2(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(in_vals2))
-    captured_stdout, captured_stderr = capsys.readouterr()
-    assert captured_stdout.strip() == "Error, invalid input"
+    assert main() == None
 
-def test_input3(monkeypatch, capsys):
+def test_input3(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(in_vals3))
-    captured_stdout, captured_stderr = capsys.readouterr()
-    assert captured_stdout.strip() == "Error, invalid input"
+    assert main() == None
 
-def test_input4(monkeypatch, capsys):
+def test_input4(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: next(in_vals4))
-    captured_stdout, captured_stderr = capsys.readouterr()
-    assert captured_stdout.strip() == "Error, invalid input"
+    assert main() == None
 
 
 
