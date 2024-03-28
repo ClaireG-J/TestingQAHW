@@ -1,5 +1,13 @@
 # TestingQAHW
 
+Assignment-3:  
+  
+The web interface for this project can be found at: [cgj127.pythonanywhere.com](https://cgj127.pythonanywhere.com/)   
+the verson of bmi.py from Assignment 2 has been modified to accomodate the web interface  
+for documentation purposes, A2_bmi.py has the version from assignment 2  
+
+--  
+   
 Assignment-2:
 
 Contributors: Claire Justis, cgj127, ClaireG-J
