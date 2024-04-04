@@ -31,5 +31,18 @@ def Category_Calc(BMI):
   elif (BMI >= 30):
     return "Obese"
 
+def main():
+  try:
+    feet = int(input("Enter the height in feet: "))
+    inches = int(input("Enter the additional inches: "))
+    weight_lbs = int(input("Enter the weight in lbs: "))
 
+    BMI_Calc(feet, inches, weight_lbs)
+
+    return 0
+  except:
+    print("Error invalid input")
+
+#run main
+main()
 
