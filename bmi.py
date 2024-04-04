@@ -43,5 +43,4 @@ main():
   except:
     print("Error invalid input")
 
-#run main
-main()
+
