@@ -12,8 +12,8 @@ def BMI_Calc(feet, inches, weight_lbs):
     BMI = weight_kg / height
     #find Category
     category = Category_Calc(BMI)
-    #return BMI and category (will be used in the html)
-    return BMI, category
+    #Output message to console
+    print(f'\nThis person\'s BMI is {BMI:.1f}, which is {category}\n')
   except:
     print("Error")
   
@@ -30,3 +30,18 @@ def Category_Calc(BMI):
   # 30 <= x < inf
   elif (BMI >= 30):
     return "Obese"
+
+main():
+  try:
+    feet = int(input("Enter the height in feet: "))
+    inches = int(input("Enter the additional inches: "))
+    weight_lbs = int(input("Enter the weight in lbs: "))
+
+    BMI_Calc(feet, inches, weight_lbs)
+
+    return 0
+  except:
+    print("Error invalid input")
+
+#run main
+main()
