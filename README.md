@@ -1,4 +1,4 @@
-# TestingQAHW
+# TestingQAHW  [![Coverage Status](https://coveralls.io/repos/github/ClaireG-J/TestingQAHW/badge.svg)](https://coveralls.io/github/ClaireG-J/TestingQAHW)  
 
 Assignment-3:  
   
